@@ -4,7 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 :root {
     --bg-color: #080808;
@@ -35,7 +35,7 @@ body{
     align-items: center;
     z-index: 1000; /*Se le da prioridad de apilamiento*/
 }
-#menu.icon{
+#menu-icon{
     font-size: 3.5rem;
     color:var(--main-color);
     display: none;
@@ -386,5 +386,90 @@ section{
     text-align: center;
     margin-top: 40px;
     font-size: 16px;
+}
+.thanks-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.thanks-content h1{
+    font-size: 8rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+.thanks-content h3{
+    margin: 1rem 0;
+    font-size: 4rem;
+}
+.thanks-content p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 5rem;
+}
+.thanks-content i{
+    font-size: 8rem;
+    font-weight: 500;
+    line-height: 1.8;
+    color: greenyellow;
+}
+
+/*Responsive*/
+@media (max-width: 1285px) {
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3rem;
+        background: rgba(0, 0, 0, 0.8);
+        border-bottom-left-radius:2rem ;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: var(--text-color)
+    }
+    .navbar.active{
+        display: block;
+    }
+    .gradient-btn{
+        display: none;
+    }
+    .home{
+        flex-direction: column-reverse;
+        margin: 5rem 0;
+        gap: 5rem;
+    }
+    .home-content{
+        align-items: center;
+        text-align: center;
+    }
+    .home-img img{
+        width: 56vw;
+    }
+    .about{
+        flex-direction: column-reverse ;
+        text-align: center;
+    }
+    .about h2{
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .about img{
+        width: 52vw;
+    }
+    .contact form{
+        flex-direction: column;
+    }
     
 }

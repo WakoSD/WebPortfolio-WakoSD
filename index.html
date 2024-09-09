@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,727;1,727&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -19,15 +22,14 @@
             Wako<span>SD</span>
         </a>
         <!--Navbar-->
-        <!--<i class="bx bx-menu" id="menu-icon"></i>-->
+        <i class="bx bx-menu" id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
         </nav>
-        <button class="gradient-btn">Contact me</button>
+        <a class="gradient-btn" href="#contact">Contact me</a>
     </header>
 
     <section class="home" id="home">
@@ -163,23 +165,27 @@
     <!--Contact y Footer-->    
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="#">
+        <form action="https://formsubmit.co/jerrycampos02@gmail.com" method="POST" >
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
+                    <input type="text" name="name" required placeholder="Full Name">
+                    <input type="email" name="email" required placeholder="Email">
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Phone Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="number" name="phone" placeholder="Phone Number">
+                    <input type="text" name="subject" placeholder="Subject">
                 </div>
             </div>
             <div class="input-group-2">
-                <textarea name="" id="" placeholder="Your message" cols="30" rows="10"></textarea>
+                <textarea name="message" id="" placeholder="Your message" cols="30" rows="10"></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
                 <input type="submit" value="Send Message" class="btn">
             </div>
         </form>
     </section>
+
+   
 
     <footer class="footer">
         <div class="social-icons">
@@ -214,5 +220,8 @@
 
     </footer>
     <script src="script.js"></script>
+
+
+
 </body>
 </html>
