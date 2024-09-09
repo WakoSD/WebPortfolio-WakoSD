@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio! This is a simple and clean website showcasing my skills, projects, and services. Feel free to explore and get in touch!
 
+![image alt](https://github.com/WakoSD/WebPortfolio-WakoSD/blob/1f3a730a1291f829f5eac28630dd5d5f54c49a22/portfolioWakoSD2.png)
+
 ## Overview
 
 This portfolio serves as a platform where I can present my journey in web and game development. It includes sections about me, the services I offer, my projects, and a contact form for any inquiries.
