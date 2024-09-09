@@ -214,6 +214,11 @@ section{
 .about-content .btn{
     margin: 3rem 0;
 }
+.about-content i{
+    margin-top: 3rem;
+    font-size: 5rem;
+    color: var(--main-color);
+}
 
 ::-webkit-scrollbar{
     width: 20px;
