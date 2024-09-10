@@ -444,6 +444,37 @@ section{
         margin: 3rem 0;
         color: var(--text-color)
     }
+    .projects-box{
+        display: flex;
+        gap: 3rem;
+        row-gap: 5rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .services-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2.5rem;
+    }     
+    .thanks-content h1{
+        font-size: 6rem;
+        font-weight: 500;
+        margin-top: 1.5rem;
+        line-height: 1;
+    }
+    .thanks-content h3{
+        margin: 1rem 0;
+        font-size: 2rem;
+    }
+    .thanks-content p{
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.8;
+        margin-bottom: 5rem;
+    }  
     .navbar.active{
         display: block;
     }
